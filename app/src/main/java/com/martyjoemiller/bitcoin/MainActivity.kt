@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         init()
     }
 
-    @SuppressLint("CheckResult")
     private fun init() {
     }
 }
