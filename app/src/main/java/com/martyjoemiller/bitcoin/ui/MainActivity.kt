@@ -1,11 +1,8 @@
-package com.martyjoemiller.bitcoin
+package com.martyjoemiller.bitcoin.ui
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import io.reactivex.Observable
-import io.reactivex.functions.Consumer
-import kotlinx.android.synthetic.main.activity_main.*
+import com.martyjoemiller.bitcoin.R
 
 class MainActivity : AppCompatActivity() {
 
