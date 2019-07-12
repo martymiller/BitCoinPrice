@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<dimen name="bitcoin_price_size">45sp</dimen>
+	<dimen name="bitcoin_price_size">55sp</dimen>
 </resources>
