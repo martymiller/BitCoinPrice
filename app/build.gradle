@@ -5,6 +5,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/mamiller/keystores/bitcoin-keystore.jks')
+            storePassword 'github'
+            keyAlias = 'bitcoin-key'
+            keyPassword 'github'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.martyjoemiller.bitcoin"
@@ -15,9 +23,15 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }

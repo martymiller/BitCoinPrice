@@ -2,4 +2,5 @@
 <resources>
 	<dimen name="bitcoin_symbol_size">25sp</dimen>
 	<dimen name="bitcoin_price_size">55sp</dimen>
+	<dimen name="default_padding">15dp</dimen>
 </resources>
