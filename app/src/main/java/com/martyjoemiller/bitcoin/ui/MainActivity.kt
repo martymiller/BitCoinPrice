@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("CheckResult")
     private fun init() {
+        callBitcoinEndpoint(0)
         disposable = Observable.interval(5, TimeUnit.SECONDS)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(::callBitcoinEndpoint, ::onError)

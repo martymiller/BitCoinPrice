@@ -9,6 +9,7 @@
 	android:background="@android:color/holo_blue_dark"
 	tools:context=".ui.MainActivity">
 
+
 	<TextView
 		android:id="@+id/bitcoinPrice"
 		android:layout_width="wrap_content"
@@ -25,5 +26,22 @@
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/bitcoinSymbol"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/helvetica"
+		android:shadowColor="@android:color/black"
+		android:shadowDx="3"
+		android:shadowDy="3"
+		android:shadowRadius="3"
+		android:text="@string/symbol_btc"
+		android:textSize="@dimen/bitcoin_symbol_size"
+		android:textColor="@android:color/white"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/bitcoinPrice"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
